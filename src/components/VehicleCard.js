@@ -1,7 +1,15 @@
-import React from 'react'
-import '../stylesheets/Vehicle_Card.css'
+import React, { useState } from 'react';
+import '../stylesheets/Vehicle_Card.css';
+import { BsStar, BsStarFill } from 'react-icons/bs';
 
 function VehicleCard(){
+
+    const [isFavorite, setIsFavorite] = useState(false);
+
+    function handleFavoriteClick() {
+      setIsFavorite(!isFavorite);
+    }
+
     return (
         <div className='vehicle_card'>
             <div className='vehicle_card_head'>
@@ -13,9 +21,19 @@ function VehicleCard(){
                     />
                 </div>
                 <h2 className='vehicle_card_head__title'>Toyota Supra Mk4</h2>
-                <div className='vehicle_card_head__favorite_icon_container'>
-                    <h3>Icon</h3>
-                </div>
+                <div 
+                className={`vehicle_card_head__favorite_icon_container ${
+                isFavorite ? 'favorite' : ''
+                }`}
+                onClick={handleFavoriteClick}
+            >
+                {isFavorite ? (
+                <BsStarFill className='favorite_icon' />
+                ) : (
+                <BsStar className='favorite_icon' />
+                )}
+        </div>
+                
             </div>
             <div className='vehicle_card_img_container'>
                 <img
@@ -29,8 +47,8 @@ function VehicleCard(){
 
                 </div>
                 <div className='vehicle_card_info__buttons'>
-                    <a className='buttons' href=''>Comprar</a>
-                    <a className='buttons' href=''>Especificaciones</a>
+                    <a className='buttons' href=''>Buy</a>
+                    <a className='buttons' href=''>Specifications</a>
                 </div>
             </div>
         </div>

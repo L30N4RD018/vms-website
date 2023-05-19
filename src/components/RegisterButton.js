@@ -10,4 +10,4 @@ function RegisterButton () {
     </Button>
   );
 };
-export default RegisterButton
+export default RegisterButton;

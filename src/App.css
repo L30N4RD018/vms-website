@@ -1,4 +1,6 @@
 @import "./stylesheets/definitions.css";
+@import "./stylesheets/Buttons.css";
+
 .App{
     min-height: 615px;
     background-color: var(--main-background);
@@ -22,7 +24,3 @@
     justify-content: space-around;
 }
 
-.button-container {
-    display: flex;
-    gap: 15px;
-  }

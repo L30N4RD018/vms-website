@@ -1,5 +1,9 @@
 import React from 'react'
 import '../stylesheets/Header.css'
+import LoginButton from '../components/LoginButton';
+import RegisterButton from '../components/RegisterButton'; 
+import SettingsButton from '../components/SettingsButton'; 
+
 
 function Header(){
     return(
@@ -30,11 +34,22 @@ function Header(){
                     </div>
                 </div>
             </form>
+
+            
+    
+    
             <div className='credentials_user'>
-                <div className='credentials_user__login'>
+
+                <div className='credentials_user__login'>                
+             <div className="button-container">      
+           <LoginButton /> 
+         </div>
 
                 </div>
                 <div className='credentials_user__sing_up'>
+              <div className="button-container">      
+           <RegisterButton />            
+         </div>
 
                 </div>
             </div>
@@ -42,6 +57,9 @@ function Header(){
 
             </div>
             <div className='settings'>
+            <div className="button-container">      
+           <SettingsButton />            
+         </div>
 
             </div>
         </header>

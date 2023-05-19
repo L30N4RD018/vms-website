@@ -1,19 +1,12 @@
 import './App.css';
 import VehicleCard from "./components/VehicleCard";
 import Header from "./components/Header";
-import LoginButton from './components/LoginButton';
-import RegisterButton from './components/RegisterButton'; 
 
 function App() {
   return (
      <section className='App'>
          <Header />
-         <div>
-         <div className="button-container">      
-      <LoginButton /> 
-      <RegisterButton />
-    </div>
-    </div>
+
          <section className='main_screen'>
              <section className='filterer_options'>
 

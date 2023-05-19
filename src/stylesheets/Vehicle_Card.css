@@ -81,3 +81,9 @@
     margin: 4px;
     background-color: var(--main-green);
 }
+
+.favorite {
+    color: rgb(3, 172, 0);
+    
+  }
+
