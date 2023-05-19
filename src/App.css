@@ -1,0 +1,23 @@
+@import "./stylesheets/definitions.css";
+.App{
+    min-height: 615px;
+    background-color: var(--main-background);
+    top: 50px;
+    border: 1px inset red;
+}
+.main_screen{
+    min-height: 615px;
+    display: flex;
+    border: 1px inset blue;
+}
+.filterer_options{
+    min-width: 230px;
+    flex-grow: 4;
+    background-color: var(--second-green);
+}
+.available_vehicles{
+    display: flex;
+    flex-grow:8;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
