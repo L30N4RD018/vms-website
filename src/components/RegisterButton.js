@@ -1,13 +1,13 @@
 import React from 'react';
-import {FaUserPlus } from 'react-icons/fa';
-
+import { Button } from 'react-bootstrap';
+import { BsPersonPlusFill } from 'react-icons/bs';
 
 function RegisterButton () {
   return (
-    <button className="register-button">
-      <FaUserPlus className="button-icon" />
+    <Button variant="success">
+      <BsPersonPlusFill className="button-icon" />
       Register
-    </button>
+    </Button>
   );
 };
 export default RegisterButton

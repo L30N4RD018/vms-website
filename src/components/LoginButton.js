@@ -1,12 +1,13 @@
 import React from 'react';
-import { FaUser} from 'react-icons/fa';
+import { Button } from 'react-bootstrap';
+import { BsFillPersonFill } from 'react-icons/bs';
 
 function LoginButton ()  {
-  return (
-    <button className="login-button">
-      <FaUser className="button-icon" />
+  return (    
+    <Button variant="primary">
+      <BsFillPersonFill className="button-icon" />
       Login
-    </button>
+    </Button>
   );
 };
 

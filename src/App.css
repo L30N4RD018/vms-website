@@ -21,3 +21,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.button-container {
+    display: flex;
+    gap: 15px;
+  }

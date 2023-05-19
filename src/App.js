@@ -9,8 +9,10 @@ function App() {
      <section className='App'>
          <Header />
          <div>
-      <LoginButton />
+         <div className="button-container">      
+      <LoginButton /> 
       <RegisterButton />
+    </div>
     </div>
          <section className='main_screen'>
              <section className='filterer_options'>
