@@ -1,36 +1,17 @@
-import './App.css';
-import VehicleCard from "./components/VehicleCard";
-import Header from "./components/Header";
-
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-     
-     
-       
-     
-     <section className='App'>
-         <Header />
+    <>
+      <Home />
 
-         <section className='main_screen'>
-             <section className='filterer_options'>
-
-
-             </section>
-             <section className='available_vehicles'>
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-                 <VehicleCard />
-             </section>
-         </section>
-     </section>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
