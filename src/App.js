@@ -1,5 +1,5 @@
 import './App.css';
-import Vehicle_Card from "./components/Vehicle_Card";
+import VehicleCard from "./components/VehicleCard";
 import Header from "./components/Header";
 
 function App() {
@@ -11,16 +11,16 @@ function App() {
 
              </section>
              <section className='available_vehicles'>
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
-                 <Vehicle_Card />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
+                 <VehicleCard />
              </section>
          </section>
      </section>

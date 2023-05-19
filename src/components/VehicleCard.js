@@ -1,7 +1,7 @@
 import React from 'react'
 import '../stylesheets/Vehicle_Card.css'
 
-function Vehicle_Card(){
+function VehicleCard(){
     return (
         <div className='vehicle_card'>
             <div className='vehicle_card_head'>
@@ -21,7 +21,7 @@ function Vehicle_Card(){
                 <img
                     className='vehicle_img'
                     src={require('../img/vehicles/Toyota_Supra_Mk4.png')}
-                    alt='Vehicle Image'
+                    alt='Vehicle'
                 />
             </div>
             <div className='vehicle_card_info'>
@@ -37,4 +37,4 @@ function Vehicle_Card(){
     );
 }
 
-export default Vehicle_Card
+export default VehicleCard
