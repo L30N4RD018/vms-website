@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import '../stylesheets/Vehicle_Card.css';
-import CustomLink from './CustomLink';
+import '../stylesheets/Vehicle_CardBuy.css';
 import {BsStar, BsStarFill} from 'react-icons/bs';
 
 function VehicleCard() {
@@ -42,16 +41,16 @@ function VehicleCard() {
           src={require('../img/vehicles/Toyota_Supra_Mk4.png')}
           alt='Vehicle'
         />
+
       </div>
       <div className='vehicle_card_info'>
+        <a className='key_word' >Sumary</a>
         <div className='vehicle_card_info__box'>
 
         </div>
         <div className='vehicle_card_info__buttons'>     
-                      
-        <CustomLink to="/Buy"> <a className='buttons' >Buy</a>   </CustomLink>
 
-          <a className='buttons' href=''>Specifications</a>
+
         </div>
       </div>
     </div>
