@@ -1,0 +1,16 @@
+@import "definitions.css";
+.CustomButton{
+    border: none;
+    border-radius: 10px;
+    height: 70%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-icon{
+    flex-grow: 1;
+}
+.button-text{
+    flex-grow: 3;
+}

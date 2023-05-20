@@ -4,8 +4,8 @@
 }
 .vehicle_card{
     margin: 5px;
-    width: 210px;
-    height: 270px;
+    width: 230px;
+    height: 320px;
     border-radius: 12px;
     font-size: 0.65em;
     background-color: var(--main-background);
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex-grow: 0;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 }
@@ -26,6 +26,7 @@
     flex-grow: 2;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 .vehicle_card_head__brand_icon{
     object-fit: contain;
@@ -38,12 +39,17 @@
 }
 .vehicle_card_head__favorite_icon_container{
     display: flex;
-    flex-grow: 2;
+    flex-grow: 6;
     align-items: center;
     justify-content: center;
+    height: 100%;
+}
+.favorite_icon{
+    width: 100%;
+    height: 40%;
 }
 .vehicle_card_img_container{
-    flex-grow:2;
+    flex-grow:1;
     width: 100%;
     display: flex;
     background-color: #F7F9F9;
@@ -83,7 +89,7 @@
 }
 
 .favorite {
-    color: rgb(3, 172, 0);
+    color: var(--second-green);
     
   }
 
