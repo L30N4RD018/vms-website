@@ -12,7 +12,7 @@ function CustomLink({ to, children, ...props }) {
     );
 }
 
-export default CustomLink;
+export default CustomLink
 
 
 
