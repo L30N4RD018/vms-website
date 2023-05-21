@@ -6,8 +6,7 @@ import {Route, Routes} from "react-router-dom";
 function Buy() {
   return (
     <section className='App'>
-      <section className='main_screen'>
-     
+      <section className='main_screen'>     
         <section className='Forml'>
           <Forml/>     
         </section>
