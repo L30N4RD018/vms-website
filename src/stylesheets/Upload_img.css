@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px dashed #1475cf;
+  border: 2px dashed #06760d;
   height: 300px;
   width: 500px;
   cursor: pointer;
@@ -34,4 +34,10 @@
 .upload-content{
   display: flex;
   align-items: center;
+}
+
+.upload-main {
+  margin-top: 40px;  
+   
+
 }
