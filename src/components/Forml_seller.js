@@ -1,7 +1,10 @@
 import React from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import PropTypes from "prop-types";
-import "../stylesheets/Forml.css";
+import "../stylesheets/Forml_seller.css";
+import maritime_v from '../img/icons/Maritime_vehicle.png'
+import land_v from '../img/icons/Land_vehicle.png'
+import air_v from '../img/icons/Air_vehicle.png'
 
 const inputs = [
   {
@@ -57,27 +60,22 @@ const inputs = [
 
 const inputs2 = [
   {
-    level: "Card number",
-    type: "number",
-    placeholder: "0000 0000 0000 0000",
-    for: "Card Number",
+    level: "Description",
+    type: "text",
+    placeholder: "Amazing and classic car...",
+    for: "Description",
     required: true,
   },
   {
-    level: "Expiry date",
+    level: "Specifications",
     type: "text",
-    placeholder: "MM/YY",
-    for: "expiry date",
+    placeholder: "4 speed, automatic...",
+    for: "Specifications",
     required: true,
   },
-  {
-    level: "CVC/CVV",
-    type: "text",
-    placeholder: "***",
-    for: "CVC/CVV",
-    required: true,
-  },
+
 ];
+
 
 const InputItem = ({ input }) => {
   return (
@@ -102,16 +100,18 @@ InputItem.propTypes = {
 const OrderForm = () => {
   return (
     <Form action=" ">
-      <h4>Your Billing Details</h4>
+      <h4>Seller Information </h4>
       {inputs.map((input, i) => (
         <InputItem input={input} key={i} />
       ))}
     </Form>
   );
 };
-const CardForm = () => {
+
+const  VehicleForm = () => {
   return (
     <Form action=" ">
+        <h4>Vehicle information</h4>
       {inputs2.map((input, i) => (
         <InputItem input={input} key={i} />
       ))}
@@ -167,43 +167,57 @@ const Shape = ({ ...rest }) => {
   );
 };
 
+
+
 const Payment = () => {
   return (
+
     <Card className="ezy__eporder3-card border-0 mt-4 mt-lg-0">
       <Card.Body className="p-3 px-lg-5 pt-lg-5">
-        <h4 className="mb-5">Your Order</h4>
+        <hr className="my-4" />
 
-        <Row>
-          <Col xs={4}>
-            <h6 className="mb-0">Total</h6>
-          </Col>
-        </Row>
+        <VehicleForm/>
         <hr className="my-4" />
-        <Row>
-          <Col xs={8}></Col>
-          <Col xs={4}>
-            <p className="mb-0">PRICE </p>
-          </Col>
-        </Row>
-        <hr className="my-4" />
+        <h4 className="mb-5">Type of vehicle</h4>
       </Card.Body>
       <Card.Body className="pt-0 p-3 p-lg-5">
         <Form className="ezy__eporder3-payment p-4">
-          <h6>Paypal</h6>
-          <Form.Check
-            type="radio"
-            label={<Shape className="ms-3" />}
-            name="ezy__eporder3-payment-input"
-            className="d-flex align-items-center mt-3 mb-4"
-          />
-          <h6>Debit or Credit Card</h6>
+
+
+          <h6>Maritime</h6>
           <Form.Check
             type="radio"
             label={
               <img
-                src="https://cdn.easyfrontend.com/pictures/Debit%20or%20Credit.png"
+                src={maritime_v}
                 alt=""
-                className="img-fluid ms-3"
+                className="img-fluid ms3"
+              />
+            }
+            name="ezy__eporder3-payment-input"
+            className="d-flex align-items-center mt-3 mb-4"
+          />
+          <h6>Land</h6>
+          <Form.Check
+            type="radio"
+            label={
+              <img
+              src={land_v}
+              alt=""
+              className="img-fluid ms3"
+              />
+            }
+            name="ezy__eporder3-payment-input"
+            className="d-flex align-items-center mt-3 mb-4"
+          />
+          <h6>Air</h6>
+          <Form.Check
+            type="radio"
+            label={
+              <img
+              src={air_v}
+              alt=""
+              className="img-fluid ms3"
               />
             }
             name="ezy__eporder3-payment-input"
@@ -211,7 +225,7 @@ const Payment = () => {
           />
           {/* cardform  */}
           <Col xs={12} lg={6}>
-            <CardForm />
+    
           </Col>
           <Button variant="" className="ezy__eporder3-btn w-100">
             Pay Now
