@@ -1,26 +1,19 @@
-.body_uploader{
-  
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import 'definitions.css';
+.upload-main {
+  width: 100%;
+  height: 90%;
 }
-
 .form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px dashed #06760d;
-  height: 300px;
-  width: 500px;
+  border: 2px dashed var(--second-green);
+  height: 90%;
+  width: 100%;
   cursor: pointer;
   border-radius: 5px;
 }
-
-
-
 .uploaded-row{
   margin: 10px 0;
   display: flex;
@@ -34,10 +27,4 @@
 .upload-content{
   display: flex;
   align-items: center;
-}
-
-.upload-main {
-  margin-top: 40px;  
-   
-
 }

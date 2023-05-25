@@ -26,7 +26,7 @@ InputItem.propTypes = {
 export const CustomForm = ({title, inputs}) => {
   return (
     <Form action='' className='form__box'>
-      <h4>{title}</h4>
+      {title && (<h4>{title}</h4>)}
       {inputs.map((input, i) => (
         <InputItem input={input} key={i}/>
       ))}

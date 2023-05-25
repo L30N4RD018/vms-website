@@ -81,7 +81,7 @@ input[class='search_input']{
     border-radius: 3px 0 0 3px;
     height: 2.6em;
     width: 100%;
-    background-color: var(--main-background);
+    background-color: white;
     padding-left: 10px;
     font-family: "Arial Rounded MT Bold", sans-serif;
     font-size: small;

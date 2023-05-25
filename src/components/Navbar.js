@@ -1,14 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../stylesheets/Navbar.css'
 import CustomButton from "./CustomButton";
-import CustomLink from "./CustomLink";
-import { BsFillPersonFill, BsPersonPlusFill, BsGearFill } from 'react-icons/bs';
+import { BsFillPersonFill, BsPersonPlusFill, BsGearFill, BsCartFill} from 'react-icons/bs';
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleSettingsClick = () => {
-    setIsOpen(!isOpen);
-  }
   return (
     <header className='main_header'>
       <div className='hamburger_menu'>
@@ -43,6 +38,7 @@ function Navbar() {
             variant='primary'
             icon={BsFillPersonFill}
             spanText='Login'
+            classname='CustomButton'
           />
         </div>
         <div className='credentials_user__sing_up'>
@@ -50,28 +46,23 @@ function Navbar() {
             variant='success'
             icon={BsPersonPlusFill}
             spanText='Register'
+            classname='CustomButton'
           />
         </div>
       </div>
       <div className='shopping_car'>
-
+        <CustomButton
+          variant='secondary'
+          icon={BsCartFill}
+          classname='CustomButton'
+        />
       </div>
       <div className='settings'>
         <CustomButton
           variant='secondary'
           icon={BsGearFill}
+          classname='CustomButton'
         />
-        {isOpen && (
-          <div className='menu'>
-            <ul>
-              <li>
-                <CustomLink>
-                  <span onClick={handleSettingsClick}></span>
-                </CustomLink>
-              </li>
-            </ul>
-          </div>
-        )}
       </div>
     </header>
   );

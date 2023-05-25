@@ -1,23 +1,24 @@
 @import "./stylesheets/definitions.css";
-
-
 .App{
     min-height: 615px;
     background-color: var(--main-background);
 }
 .main_screen{
     min-height: 615px;
-    display: flex;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: 2fr 7fr;
 }
 .filterer_options{
-    min-width: 230px;
-    flex-grow: 4;
-    background-color: var(--second-green);
+    background-color: rgba(var(--main-green),.65);
+
+}
+.filterer_section{
+    border: 1px inset black;
 }
 .available_vehicles{
-    display: flex;
-    flex-grow:8;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
 }
-

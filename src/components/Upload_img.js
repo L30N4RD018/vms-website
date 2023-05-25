@@ -1,12 +1,8 @@
 import React from "react";
-import { useState } from 'react'
-import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
-import PropTypes from "prop-types";
-import  '../stylesheets/Upload_img.css'
-
-import { MdCloudUpload, MdDelete } from 'react-icons/md' 
+import { MdCloudUpload, MdDelete } from 'react-icons/md'
 import { AiFillFileImage } from 'react-icons/ai'
-
+import { useState } from 'react'
+import  '../stylesheets/Upload_img.css'
 
 
 function Upload_img() {
@@ -38,7 +34,7 @@ function Upload_img() {
         ) : (
           <>
             <MdCloudUpload color="#1475cf" size={60} />
-            <p>Upload here the image of the vehicle</p>
+            <h4>Upload here the image of the vehicle</h4>
           </>
         )}
       </form>

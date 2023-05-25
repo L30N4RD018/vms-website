@@ -1,19 +1,20 @@
-import '../stylesheets/Buy.css';
-import '../stylesheets/CustomForm.css'
-import Upload_img from "../components/Upload_img";
 import React from 'react'
 import {Button, Card, Col, Form} from "react-bootstrap";
+import {CustomForm} from "../components/CustomForm";
+import {MultiOptionsForm} from "../components/MultiOptionsForm";
+import Upload_img from "../components/Upload_img";
 import InputsJson from "../data/inputs_static.json";
 import maritime_v from "../img/icons/Maritime_vehicle.png";
 import land_v from "../img/icons/Land_vehicle.png";
 import air_v from "../img/icons/Air_vehicle.png";
-import {CustomForm} from "../components/CustomForm";
-import {MultiOptionsForm} from "../components/MultiOptionsForm";
+import '../stylesheets/Main.css';
+import '../stylesheets/CustomForm.css'
 
 const Options = () => {
   return (
     <Card.Body>
       <Form className="form__box" >
+        <h4 className="mb-5">Type of vehicle</h4>
         <div id='types_vehicles'>
           <div>
             <h6>Maritime</h6>
@@ -76,7 +77,6 @@ const Details = () => {
       <hr className="my-4"/>
       <CustomForm title='Vehicle Information' inputs={InputsJson[2]}/>
       <hr className="my-4"/>
-      <h4 className="mb-5">Type of vehicle</h4>
     </Card.Body>
   );
 }

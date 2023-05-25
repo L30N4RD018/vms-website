@@ -13,6 +13,39 @@ export const CardForm = ({inputs}) => {
   );
 }
 
+export const PaymentOptions = ({}) => {
+  return (
+    <Form className='form__box'>
+      <h6>Paypal</h6>
+      <Form.Check
+        type="radio"
+        label={<Shape className="ms-3"/>}
+        name="option_select"
+      />
+      <h6>Debit or Credit Card</h6>
+      <Form.Check
+        type="radio"
+        label={
+          <img
+            src="https://cdn.easyfrontend.com/pictures/Debit%20or%20Credit.png"
+            alt=""
+            className="img-fluid ms-3"
+          />
+        }
+        name="option_select"
+      />
+    </Form>
+  );
+}
+
+export const MultiOptionsForm = ({children}) => {
+  return (
+    <Card>
+      {children}
+    </Card>
+  );
+}
+
 export const Shape = ({...rest}) => {
   return (
     <svg
@@ -58,13 +91,5 @@ export const Shape = ({...rest}) => {
         </g>
       </g>
     </svg>
-  );
-}
-
-export const MultiOptionsForm = ({children}) => {
-  return (
-    <Card className="multiOption_box">
-      {children}
-    </Card>
   );
 }
