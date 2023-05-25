@@ -73,21 +73,6 @@
     display: flex;
     align-items: center;
 }
-.buttons{
-    flex-grow: 1;
-    display: flex;
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
-    font-weight: 400;
-    border-radius: 5px;
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-    margin: 4px;
-    background-color: var(--main-green);
-}
-
 .favorite {
     color: var(--second-green);
     

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../stylesheets/Navbar.css'
 import CustomButton from "./CustomButton";
+import CustomLink from "./CustomLink";
 import { BsFillPersonFill, BsPersonPlusFill, BsGearFill } from 'react-icons/bs';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleSettingsClick = () => {
+    setIsOpen(!isOpen);
+  }
   return (
     <header className='main_header'>
       <div className='hamburger_menu'>
@@ -15,7 +20,7 @@ function Navbar() {
         </label>
       </div>
       <div className='system_logo_container'>
-        <a className='system_logo__link' href='../../public/index.html'>
+        <a className='system_logo__link' href='/'>
           <img
             className='system_logo'
             src={require('../img/icons/Favicon_VMS_64.png')}
@@ -33,7 +38,6 @@ function Navbar() {
         </div>
       </form>
       <div className='credentials_user'>
-
         <div className='credentials_user__login'>
           <CustomButton
             variant='primary'
@@ -57,6 +61,17 @@ function Navbar() {
           variant='secondary'
           icon={BsGearFill}
         />
+        {isOpen && (
+          <div className='menu'>
+            <ul>
+              <li>
+                <CustomLink>
+                  <span onClick={handleSettingsClick}></span>
+                </CustomLink>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </header>
   );

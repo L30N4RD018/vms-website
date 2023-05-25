@@ -1,0 +1,14 @@
+.App{
+    display: flex;
+}
+.information_form {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    padding: 20px;
+}
+.vehicle_buy_card_container, .other_information_container{
+    padding: 20px;
+}

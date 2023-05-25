@@ -86,10 +86,12 @@
     justify-content: center;
     margin: 4px;
     background-color: var(--main-green);
+    transition: background-color 0.3s ease;
 }
-
+.buttons:hover{
+    background-color: var(--second-green);
+}
 .favorite {
     color: var(--second-green);
-    
   }
 

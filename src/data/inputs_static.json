@@ -1,0 +1,92 @@
+[
+  [
+    {
+      "level": "Full Name",
+      "type": "text",
+      "placeholder": "Juan Rodriguez",
+      "for": "name",
+      "required": "true"
+    },
+    {
+      "level": "Email",
+      "type": "email",
+      "placeholder": "example@gmail.com",
+      "for": "email",
+      "required": "true"
+    },
+    {
+      "level": "Country",
+      "type": "text",
+      "placeholder": "Colombia",
+      "for": "country",
+      "required": "true"
+    },
+    {
+      "level": "City",
+      "type": "text",
+      "placeholder": "Bogotá",
+      "for": "city",
+      "required": "true"
+    },
+    {
+      "level": "Sreet Address",
+      "type": "text",
+      "placeholder": "Carrera 72",
+      "for": "address",
+      "required": "true"
+    },
+    {
+      "level": "Post Code",
+      "type": "number",
+      "placeholder": "****",
+      "for": "post",
+      "required": "true"
+    },
+    {
+      "level": "Phone",
+      "type": "number",
+      "placeholder": "+304*****78",
+      "for": "phone",
+      "required": "true"
+    }
+  ],
+  [
+    {
+      "level": "Card number",
+      "type": "number",
+      "placeholder": "0000 0000 0000 0000",
+      "for": "Card Number",
+      "required": "true"
+    },
+    {
+      "level": "Expiry date",
+      "type": "text",
+      "placeholder": "MM/YY",
+      "for": "expiry date",
+      "required": "true"
+    },
+    {
+      "level": "CVC/CVV",
+      "type": "text",
+      "placeholder": "***",
+      "for": "CVC/CVV",
+      "required": "true"
+    }
+  ],
+  [
+    {
+      "level": "Description",
+      "type": "text",
+      "placeholder": "Amazing and classic car...",
+      "for": "Description",
+      "required": "true"
+    },
+    {
+      "level": "Specifications",
+      "type": "text",
+      "placeholder": "4 speed, automatic...",
+      "for": "Specifications",
+      "required": "true"
+    }
+  ]
+]
