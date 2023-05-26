@@ -1,11 +1,11 @@
+import React from "react";
 import '../stylesheets/Main.css';
 import '../stylesheets/CustomForm.css'
 import VehicleCardBuy from "../components/VehicleCardBuy";
 import {CustomForm} from "../components/CustomForm";
 import {MultiOptionsForm, PaymentOptions} from "../components/MultiOptionsForm";
 import InputsJson from '../data/inputs_static.json'
-import {Button} from "react-bootstrap";
-import React from "react";
+import CustomLink from "../components/CustomLink";
 
 function Buy() {
   return (
@@ -22,9 +22,9 @@ function Buy() {
         </MultiOptionsForm>
       </div>
       <div className='button_container'>
-        <Button variant="">
-          Pay Now
-        </Button>
+        <CustomLink to='/' classname='buttons'>
+          <span>Pay Now</span>
+        </CustomLink>
       </div>
     </section>
   );

@@ -48,10 +48,10 @@ function VehicleCard() {
 
         </div>
         <div className='vehicle_card_info__buttons'>
-          <CustomLink to="/buy" classname={'buttons'}>
+          <CustomLink to="/buy" classname='buttons'>
             <span>Buy</span>
           </CustomLink>
-          <CustomLink to="/buy" classname={'buttons'}>
+          <CustomLink to="/buy" classname='buttons'>
             <span>Specifications</span>
           </CustomLink>
         </div>

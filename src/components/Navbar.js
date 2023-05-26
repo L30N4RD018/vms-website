@@ -1,17 +1,25 @@
-import React from 'react'
 import '../stylesheets/Navbar.css'
+import React, {useState} from 'react'
 import CustomButton from "./CustomButton";
-import { BsFillPersonFill, BsPersonPlusFill, BsGearFill, BsCartFill} from 'react-icons/bs';
+import CustomLink from "./CustomLink";
+import {BsCartFill, BsFillPersonFill, BsGearFill, BsPersonPlusFill} from 'react-icons/bs';
+import {FaBars} from 'react-icons/fa'
+import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from "reactstrap";
 
 function Navbar() {
-  return (
-    <header className='main_header'>
+  const [dropdown, setDropDown] = useState(false)
+  const openCloseDrop = () =>{
+        setDropDown(!dropdown);
+  }
+  return (<header className='main_header'>
       <div className='hamburger_menu'>
         <input type='checkbox' className='hamburger_menu__input'></input>
         <label htmlFor='hamburger_menu__input' className='hamburger_menu__input_label'>
-          <span className='line1'></span>
-          <span className='line2'></span>
-          <span className='line3'></span>
+          <CustomButton
+            variant='secondary'
+            icon={FaBars}
+            classname='hamburg_button'
+          />
         </label>
       </div>
       <div className='system_logo_container'>
@@ -51,21 +59,36 @@ function Navbar() {
         </div>
       </div>
       <div className='shopping_car'>
-        <CustomButton
-          variant='secondary'
-          icon={BsCartFill}
-          classname='CustomButton'
-        />
+        <CustomLink to='/shopping_car' classname='none'>
+          <CustomButton
+            classname='CustomButton'
+            variant='secondary'
+            icon={BsCartFill}
+          />
+        </CustomLink>
       </div>
       <div className='settings'>
-        <CustomButton
-          variant='secondary'
-          icon={BsGearFill}
-          classname='CustomButton'
-        />
+        <Dropdown isOpen={dropdown} toggle={openCloseDrop}>
+          <DropdownToggle caret className='none' >
+            <CustomButton
+              variant='secondary'
+              icon={BsGearFill}
+              classname='CustomButton'
+            />
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem>
+              <CustomLink to='/vehicle_seller' classname='drop-item'>
+                <span>Upload Vehicle</span>
+              </CustomLink>
+            </DropdownItem>
+            <DropdownItem><span>Settings</span></DropdownItem>
+            <DropdownItem><span>Help</span></DropdownItem>
+            <DropdownItem><span>Log out</span></DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
       </div>
-    </header>
-  );
+    </header>);
 }
 
 export default Navbar

@@ -4,4 +4,5 @@
 }
 html, body{
   font-size: 18px;
+  background-color: var(--main-background);
 }

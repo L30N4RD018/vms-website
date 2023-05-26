@@ -31,7 +31,7 @@ const Filter = () => {
         <CustomButton
           variant='submit'
           spanText='Filter'
-          classname='submit_button'
+          classname='buttons'
         />
       </div>
     </div>

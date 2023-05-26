@@ -1,9 +1,9 @@
 @import "definitions.css";
+@import "Button.css";
 .App{
     display: grid;
     gap: 20px;
     padding: 20px;
-    background-color: var(--main-background);
 }
 .information_form_car{
     display: grid;
@@ -23,18 +23,4 @@
 }
 .vehicle_buy_card_container, .other_information_container{
     padding: 20px;
-}
-.button_container button{
-    background-color: var(--main-green);
-    transition: background-color 0.3s ease;
-    font-size: .85em;
-    font-weight: 600;
-    border: none;
-    color: black;
-    border-radius: 6px;
-    height: 40px;
-    width: 100px;
-}
-.button_container button:hover{
-    background-color: var(--second-green);
 }
