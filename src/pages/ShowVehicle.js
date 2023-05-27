@@ -1,5 +1,4 @@
 import '../App.css';
-import VehicleCard from "../components/VehicleCard";
 import VehiclePriceCard from "../components/VehiclePriceCard";
 import VehicleSpecifications from "../components/VehicleSpecifications"
 import '../stylesheets/CustomForm.css'
