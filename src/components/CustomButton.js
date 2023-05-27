@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Button} from 'react-bootstrap';
 import DropdownSelect from 'react-dropdown-select'
-import '../stylesheets/CustomButton.css'
+import '../stylesheets/Button.css'
 
 function CustomButton(props){
   const {icon: Icon, variant, spanText, options, placeholder, classname} = props

@@ -1,57 +1,28 @@
-import React, {useState} from 'react';
-import '../stylesheets/Vehicle_CardBuy.css';
-import {BsStar, BsStarFill} from 'react-icons/bs';
+import React from 'react';
+import '../stylesheets/Vehicle_Card.css';
 
 function VehicleCard() {
-
-  const [isFavorite, setIsFavorite] = useState(false);
-
-  function handleFavoriteClick() {
-    setIsFavorite(!isFavorite);
-  }
-
   return (
-    <div className='vehicle_card'>
-      <div className='vehicle_card_head'>
-        <div className='vehicle_card_head__brand_icon_container'>
+    <div className='vehicle_card_buy'>
+      <div className='vehicle_card_buy_head'>
+        <div className='vehicle_card_buy_head__brand_icon_container'>
           <img
-            className='vehicle_card_head__brand_icon'
+            className='vehicle_card_buy_head__brand_icon'
             src={require('../img/icons/Toyota_Icon.png')}
             alt='Brand Icon'
           />
         </div>
-        <h2 className='vehicle_card_head__title'>Toyota Supra Mk4</h2>
-        <div
-          className={`vehicle_card_head__favorite_icon_container ${
-            isFavorite ? 'favorite' : ''
-          }`}
-          onClick={handleFavoriteClick}
-        >
-          {isFavorite ? (
-            <BsStarFill className='favorite_icon'/>
-          ) : (
-            <BsStar className='favorite_icon'/>
-          )}
-        </div>
-
+        <h2 className='vehicle_card_buy_head__title'>Toyota Supra Mk4</h2>
       </div>
-      <div className='vehicle_card_img_container'>
+      <div className='vehicle_card_buy_img_container'>
         <img
           className='vehicle_img'
           src={require('../img/vehicles/Toyota_Supra_Mk4.png')}
           alt='Vehicle'
         />
-
       </div>
-      <div className='vehicle_card_info'>
-        <a className='key_word' >Sumary</a>
-        <div className='vehicle_card_info__box'>
-
-        </div>
-        <div className='vehicle_card_info__buttons'>     
-
-
-        </div>
+      <div className='vehicle_card_buy_info'>
+        <h4 className='key_word'>Sumary</h4>
       </div>
     </div>
   );

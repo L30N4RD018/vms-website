@@ -115,10 +115,10 @@
   ],
   [
     {
-      "level": "Specifications",
+      "level": "Types",
       "type": "dropdown",
       "placeholder": "Select type",
-      "for": "Specifications",
+      "for": "Types",
       "required": false,
       "options": [{"value":"Maritime", "label":"Maritime"}, {"value":"Terrestrial","label":"Terrestrial"}, {"value":"Aero","label":"Aero"}]
     },

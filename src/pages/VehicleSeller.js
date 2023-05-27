@@ -63,7 +63,7 @@ const Options = () => {
 
         </Col>
         <div className='button_container'>
-          <Button variant="">
+          <Button variant="" className='buttons'>
             Submit
           </Button>
         </div>
