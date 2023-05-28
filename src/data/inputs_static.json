@@ -146,5 +146,32 @@
       "for": "city",
       "required": false
     }
+  ],
+  [
+    {
+      "level": "Product Name",
+      "type": "text",
+      "placeholder": "Product",
+      "for": "Model",
+      "required": false
+    }
+  ],
+
+  [
+  {
+    "level": "First product date",
+    "type": "text",
+    "placeholder": "DD/MM/YYYY",
+    "for": "first_date",
+    "required": true
+  },
+
+    {
+      "level": "Second product date",
+      "type": "text",
+      "placeholder": "DD/MM/YYYY",
+      "for": "second_date",
+      "required": true
+    }
   ]
 ]
