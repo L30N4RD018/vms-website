@@ -1,7 +1,7 @@
 import '../App.css';
+import '../stylesheets/CustomForm.css'
 import VehiclePriceCard from "../components/VehiclePriceCard";
 import VehicleSpecifications from "../components/VehicleSpecifications"
-import '../stylesheets/CustomForm.css'
 
 function App() {
     return (

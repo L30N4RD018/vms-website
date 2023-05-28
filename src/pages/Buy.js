@@ -7,14 +7,14 @@ import {MultiOptionsForm, PaymentOptions} from "../components/MultiOptionsForm";
 import InputsJson from '../data/inputs_static.json'
 import CustomLink from "../components/CustomLink";
 
-function Buy() {
+function Buy({vehicle}) {
   return (
     <section className='App'>
       <section className='information_form_car'>
         <div className='form__container'>
           <CustomForm title='Your Billing Details' inputs={InputsJson[0]} id/>
         </div>
-        <VehicleCardBuy/>
+        <VehicleCardBuy vehicle={vehicle}/>
       </section>
       <div className='form__container' id='payment_form'>
         <MultiOptionsForm>

@@ -1,6 +1,5 @@
 import '../stylesheets/Vehicle_PriceCard.css';
 import '../stylesheets/Vehicle_Specifications.css'
-import VehicleCard from "../components/VehicleCard"
 
 function VehicleSpecifications() {
     return (
@@ -28,7 +27,6 @@ function VehicleSpecifications() {
                         You may like...
                     </h2>
                     <center>
-                        <VehicleCard/>
                         <a href={'/'} style={{color: 'dimgray', textAlign: 'center', margin: '10px'}}>
                             Want to see more?...
                         </a>

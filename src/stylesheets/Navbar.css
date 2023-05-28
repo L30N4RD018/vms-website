@@ -160,6 +160,7 @@ input[class='search_input']::-webkit-search-results-decoration{
     font-size: 0.9em;
     color: black;
     font-weight: 600;
+    background: none;
 }
 .drop-item{
     font-weight: 600;

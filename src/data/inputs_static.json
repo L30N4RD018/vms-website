@@ -100,14 +100,14 @@
   [
     {
       "level": "",
-      "type": "text",
+      "type": "number",
       "placeholder": "$ 60.000.000",
       "for": "less_value",
       "required": false
     },
     {
       "level": "",
-      "type": "text",
+      "type": "number",
       "placeholder": "$ 100.000.000",
       "for": "less_value",
       "required": false

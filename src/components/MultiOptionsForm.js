@@ -13,7 +13,7 @@ export const CardForm = ({inputs}) => {
   );
 }
 
-export const PaymentOptions = ({}) => {
+export const PaymentOptions = () => {
   return (
     <Form className='form__box'>
       <h6>Paypal</h6>
