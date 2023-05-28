@@ -45,13 +45,44 @@ function VehicleCard({vehicle}) {
         </div>
         <div className='vehicle_card_info'>
           <div className='vehicle_card_info__box'>
+            <div className='vehicle_card_info__box_item'>
+              <div className='item__box_icon'>
 
+              </div>
+              <div className='item__box_text'>
+
+              </div>
+            </div>
+            <div className='vehicle_card_info__box_item'>
+              <div className='item__box_icon'>
+
+              </div>
+              <div className='item__box_text'>
+
+              </div>
+            </div>
+            <div className='vehicle_card_info__box_item'>
+              <div className='item__box_icon'>
+
+              </div>
+              <div className='item__box_text'>
+
+              </div>
+            </div>
+            <div className='vehicle_card_info__box_item'>
+              <div className='item__box_icon'>
+
+              </div>
+              <div className='item__box_text'>
+
+              </div>
+            </div>
           </div>
           <div className='vehicle_card_info__buttons'>
             <CustomLink to={`/buy:${vehicle.id_vehicle}`} classname='buttons'>
               <span>Buy</span>
             </CustomLink>
-            <CustomLink to="/show_vehicle" classname='buttons'>
+            <CustomLink to={`/show_vehicle:${vehicle.id_vehicle}`} classname='buttons'>
               <span>Specifications</span>
             </CustomLink>
           </div>

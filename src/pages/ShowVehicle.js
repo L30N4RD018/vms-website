@@ -3,12 +3,12 @@ import '../stylesheets/CustomForm.css'
 import VehiclePriceCard from "../components/VehiclePriceCard";
 import VehicleSpecifications from "../components/VehicleSpecifications"
 
-function App() {
+function App({vehicle}) {
     return (
         <section className='App'>
             <div>
-            <VehiclePriceCard/>
-            <VehicleSpecifications/>
+            <VehiclePriceCard vehicle={vehicle}/>
+            <VehicleSpecifications vehicle={vehicle}/>
             </div>
         </section>
     )

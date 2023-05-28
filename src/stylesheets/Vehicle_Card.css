@@ -5,7 +5,7 @@
 .vehicle_card{
     display: grid;
     grid-template-rows: 1fr 4fr 5fr;
-    width: 230px;
+    width: 240px;
     height: 340px;
     border-radius: 10px;
     font-size: 0.65em;
@@ -131,6 +131,10 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+}
+.vehicle_card_info__box_item{
+    background: rgba(235,235,235, .8);
+    backdrop-filter: blur(1px);
 }
 .favorite {
     color: var(--second-green);

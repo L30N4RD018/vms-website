@@ -82,6 +82,11 @@ function Navbar() {
                 <span>Upload Vehicle</span>
               </CustomLink>
             </DropdownItem>
+            <DropdownItem>
+              <CustomLink to='/purchase_history' classname='drop-item'>
+                <span>Purchase History</span>
+              </CustomLink>
+            </DropdownItem>
             <DropdownItem><span>Settings</span></DropdownItem>
             <DropdownItem><span>Help</span></DropdownItem>
             <DropdownItem><span>Log out</span></DropdownItem>

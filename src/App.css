@@ -24,5 +24,11 @@
     justify-content: space-around;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-
+}
+.purchase_in_transit{
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    min-width: 600px;
+    grid-template-rows: 1fr 10fr;
 }

@@ -6,6 +6,7 @@ import ShoppingCar from "./pages/ShoppingCar"
 import Navbar from "./components/Navbar";
 import {Route, Routes} from "react-router-dom";
 import {useEffect, useState} from "react";
+import ShoppingRecord from "./pages/ShoppingRecord";
 
 function App() {
   const [Vehicles, setVehicles] = useState([])
@@ -41,9 +42,17 @@ function App() {
                 element={<Buy vehicle={vehicle} />}/>
             )
           )}
+          {loading === false &&
+            Vehicles.map(vehicle => (
+                <Route
+                  key={vehicle.id_vehicle}
+                  path={`/show_vehicle:${vehicle.id_vehicle}`}
+                  element={<ShowVehicle vehicle={vehicle} />}/>
+              )
+            )}
           <Route path="/shopping_car" element={<ShoppingCar/>}/>
-          <Route path="/show_vehicle" element={<ShowVehicle/>}/>
           <Route path="/vehicle_seller" element={<VehicleSeller />}/>
+          <Route path="/purchase_history" element={<ShoppingRecord />}/>
         </Routes>
       </div>
     </>

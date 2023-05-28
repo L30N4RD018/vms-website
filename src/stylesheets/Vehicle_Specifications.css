@@ -23,6 +23,7 @@
 
 .vehicle_specifications {
     list-style-type: None;
+    font-size: 0.7em;
 }
 
 .vehicle_specifications li::before {

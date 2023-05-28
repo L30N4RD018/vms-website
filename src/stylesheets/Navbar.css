@@ -143,8 +143,8 @@ input[class='search_input']::-webkit-search-results-decoration{
 .dropdown-menu.show {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 150px;
-    width: 180px;
+    height: 180px;
+    width: 200px;
     margin-top: 10px;
     z-index: 1;
     background: rgba(255,255,255, .8);

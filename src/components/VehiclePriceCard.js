@@ -2,7 +2,7 @@ import '../stylesheets/Vehicle_PriceCard.css';
 import CustomLink from "./CustomLink";
 import React from "react";
 
-function VehiclePriceCard() {
+function VehiclePriceCard({vehicle}) {
     return (
         <div className="vehicle_info_container">
             <div className="vehicle_price_card">
@@ -28,7 +28,7 @@ function VehiclePriceCard() {
                                  alt="Toyota"
                             />
                         </div>
-                    <h2 className="vehicle_info_card_name">Toyota Supra MK4</h2>
+                    <h2 className="vehicle_info_card_name">{vehicle.model}</h2>
                     </div>
 
                     <div className="horizontal_line_container">
@@ -37,8 +37,7 @@ function VehiclePriceCard() {
 
                     <div className="vehicle_info_description_box">
                         <h className="vehicle_info_description">
-                            Do you like sports cars with aerodynamic design?  The Toyota Supra MK4 is a classic car that
-                            never goes out of fashion, and that will make you feel the adrenaline of driving a supercar.
+                            {vehicle.description}
                         </h>
                     </div>
                 </div>
@@ -46,7 +45,7 @@ function VehiclePriceCard() {
                 <div className="vehicle_buy_card_container">
                     <div className="vehicle_buy_card">
                         <div className="vehicle_buy_save_buttons">
-                            <CustomLink to="/buy" classname={'buy_button'}>
+                            <CustomLink to={`/buy:${vehicle.id_vehicle}`} classname={'buy_button'}>
                                 <h1>BUY NOW</h1>
                             </CustomLink>
                             <div className={'save_button'}>
