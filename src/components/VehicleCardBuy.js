@@ -1,7 +1,7 @@
 import React from 'react';
 import '../stylesheets/Vehicle_Card.css';
 
-function VehicleCard() {
+function VehicleCardBuy({vehicle}) {
   return (
     <div className='vehicle_card_buy'>
       <div className='vehicle_card_buy_head'>
@@ -12,7 +12,7 @@ function VehicleCard() {
             alt='Brand Icon'
           />
         </div>
-        <h2 className='vehicle_card_buy_head__title'>Toyota Supra Mk4</h2>
+        <h2 className='vehicle_card_buy_head__title'>{vehicle.model}</h2>
       </div>
       <div className='vehicle_card_buy_img_container'>
         <img
@@ -28,4 +28,4 @@ function VehicleCard() {
   );
 }
 
-export default VehicleCard
+export default VehicleCardBuy

@@ -1,9 +1,8 @@
 import React from "react";
+import  '../stylesheets/Upload_img.css'
 import { MdCloudUpload, MdDelete } from 'react-icons/md'
 import { AiFillFileImage } from 'react-icons/ai'
 import { useState } from 'react'
-import  '../stylesheets/Upload_img.css'
-
 
 function Upload_img() {
   const [image, setImage] = useState(null);
