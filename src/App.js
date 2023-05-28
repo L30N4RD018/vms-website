@@ -25,7 +25,6 @@ function App() {
           setLoading(false);
         });
     };
-
     fetchVehicles();
   }, []);
   return (
