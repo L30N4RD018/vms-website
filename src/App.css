@@ -1,0 +1,34 @@
+@import "./stylesheets/definitions.css";
+.App{
+    min-height: 615px;
+    background-color: var(--main-background);
+}
+.main_screen{
+    min-height: 615px;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: 2fr 7fr;
+}
+.filterer_options{
+    background-color: rgba(var(--main-green),.65);
+
+}
+.filterer_section{
+    border: 1px inset black;
+}
+.available_vehicles{
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.purchase_in_transit{
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    min-width: 600px;
+    grid-template-rows: 1fr 10fr;
+}

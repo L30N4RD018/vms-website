@@ -1,0 +1,233 @@
+[
+  [
+    {
+      "level": "First Name",
+      "type": "text",
+      "placeholder": "Juan",
+      "for": "name",
+      "required": true
+    },
+    {
+      "level": "Last Name",
+      "type": "text",
+      "placeholder": "Rodriguez",
+      "for": "name",
+      "required": true
+    },
+    {
+      "level": "Email",
+      "type": "email",
+      "placeholder": "example@gmail.com",
+      "for": "email",
+      "required": true
+    },
+    {
+      "level": "Phone",
+      "type": "text",
+      "placeholder": "+304*****78",
+      "for": "phone",
+      "required": true
+    },
+    {
+      "level": "Country",
+      "type": "text",
+      "placeholder": "Colombia",
+      "for": "country",
+      "required": true
+    },
+    {
+      "level": "City",
+      "type": "text",
+      "placeholder": "Bogotá",
+      "for": "city",
+      "required": true
+    },
+    {
+      "level": "Sreet Address",
+      "type": "text",
+      "placeholder": "Carrera 72",
+      "for": "address",
+      "required": true
+    },
+    {
+      "level": "Post Code",
+      "type": "number",
+      "placeholder": "****",
+      "for": "post",
+      "required": true
+    }
+  ],
+  [
+    {
+      "level": "Card number",
+      "type": "number",
+      "placeholder": "0000 0000 0000 0000",
+      "for": "Card Number",
+      "required": true
+    },
+    {
+      "level": "Expiry date",
+      "type": "text",
+      "placeholder": "MM/YY",
+      "for": "expiry date",
+      "required": true
+    },
+    {
+      "level": "CVC/CVV",
+      "type": "text",
+      "placeholder": "***",
+      "for": "CVC/CVV",
+      "required": true
+    }
+  ],
+  [
+    {
+      "level": "Description",
+      "type": "text",
+      "placeholder": "Amazing and classic car...",
+      "for": "Description",
+      "required": true
+    },
+    {
+      "level": "Specifications",
+      "type": "text",
+      "placeholder": "4 speed, automatic...",
+      "for": "Specifications",
+      "required": true
+    }
+  ],
+  [
+    {
+      "level": "",
+      "type": "number",
+      "placeholder": "$ 60.000.000",
+      "for": "less_value",
+      "required": false
+    },
+    {
+      "level": "",
+      "type": "number",
+      "placeholder": "$ 100.000.000",
+      "for": "less_value",
+      "required": false
+    }
+  ],
+  [
+    {
+      "level": "Types",
+      "type": "dropdown",
+      "placeholder": "Select type",
+      "for": "Types",
+      "required": false,
+      "options": [{"value":"Maritime", "label":"Maritime"}, {"value":"Terrestrial","label":"Terrestrial"}, {"value":"Aero","label":"Aero"}]
+    },
+    {
+      "level": "Brand",
+      "type": "dropdown",
+      "placeholder": "Select brand",
+      "for": "Brand",
+      "required": false,
+      "options": [{"value":"Toyota", "label":"Toyota"}]
+    }
+  ],
+  [
+    {
+      "level": "",
+      "type": "text",
+      "placeholder": "Country",
+      "for": "country",
+      "required": false
+    },
+    {
+      "level": "",
+      "type": "text",
+      "placeholder": "City",
+      "for": "city",
+      "required": false
+    }
+  ],
+  [
+    {
+      "level": "Product Name",
+      "type": "text",
+      "placeholder": "Product",
+      "for": "Model",
+      "required": false
+    }
+  ],
+  [
+  {
+    "level": "First product date",
+    "type": "text",
+    "placeholder": "DD/MM/YYYY",
+    "for": "first_date",
+    "required": true
+  },
+
+    {
+      "level": "Second product date",
+      "type": "text",
+      "placeholder": "DD/MM/YYYY",
+      "for": "second_date",
+      "required": true
+    }
+  ],
+  [
+    {
+      "level": "Model",
+      "type": "text",
+      "placeholder": "Toyota Supra Mk4",
+      "for": "model",
+      "required": true
+    },
+    {
+      "level": "Description",
+      "type": "text",
+      "placeholder": "This is a vehicle",
+      "for": "description",
+      "required": true
+    },
+    {
+      "level": "Brand",
+      "type": "text",
+      "placeholder": "Toyota",
+      "for": "brand",
+      "required": true
+    },
+    {
+      "level": "Type",
+      "type": "text",
+      "placeholder": "Maritime",
+      "for": "type",
+      "required": true
+    },
+    {
+      "level": "Weight",
+      "type": "numeric",
+      "placeholder": "89000",
+      "for": "weight",
+      "required": true
+    },
+    {
+      "level": "Age",
+      "type": "numeric",
+      "placeholder": "2",
+      "for": "age",
+      "required": true
+    },
+    {
+      "level": "Price",
+      "type": "numeric",
+      "placeholder": "140000",
+      "for": "price",
+      "required": true
+    },
+    {
+      "level": "Status",
+      "type": "text",
+      "placeholder": "Second Hand",
+      "for": "status",
+      "required": true
+    }
+  ]
+]

@@ -1,0 +1,11 @@
+@import "definitions.css";
+
+* {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+.record_container {
+    display: flex;
+    gap: 100px;
+}
+

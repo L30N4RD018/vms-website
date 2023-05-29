@@ -1,0 +1,46 @@
+@import "definitions.css";
+
+* {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+.vehicle_specifications_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.vehicle_specifications_container {
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.vehicle_specifications_head {
+    margin-top: 10px;
+    font-size: 1.5em;
+    align-content: center;
+    text-align: center;
+}
+
+.vehicle_specifications {
+    list-style-type: None;
+    font-size: 0.7em;
+}
+
+.vehicle_specifications li::before {
+    content: "-";
+    color: black;
+    margin-right: 2px;
+}
+
+.vehicle_specifications li {
+    margin: 10px;
+    color: black;
+    font-size: 1.5em;
+}
+
+.recommendation_container {
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+
