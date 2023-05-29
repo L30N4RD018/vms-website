@@ -133,9 +133,35 @@
     grid-template-columns: 1fr 1fr;
 }
 .vehicle_card_info__box_item{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 2px;
+    grid-template-columns: 2fr 5fr;
     background: rgba(235,235,235, .8);
     backdrop-filter: blur(1px);
 }
+.item__box_icon{
+    text-align: center;
+}
 .favorite {
     color: var(--second-green);
+}
+.vehicle_card_buy_info{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+}
+.money_info, .total{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.9em;
+}
+.money_info, .total{
+    padding: 15px;
+}
+.total span:last-child{
+    color: var(--second-green)
 }

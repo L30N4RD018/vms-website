@@ -23,6 +23,18 @@ function VehicleCardBuy({vehicle}) {
       </div>
       <div className='vehicle_card_buy_info'>
         <h4 className='key_word'>Sumary</h4>
+        <div className='money_info'>
+          <span>{vehicle.model}</span>
+          <span>{vehicle.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
+        </div>
+        <div className='money_info'>
+          <span>Shipping</span>
+          <span>$ 2000</span>
+        </div>
+        <div className='total'>
+          <span>Total</span>
+          <span>{(vehicle.price+2000).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ function VehiclePriceCard({vehicle}) {
                 </div>
                 <div className="vehicle_price_card_info">
                     <div className="vehicle_price_card_buy_button">
-                        <span className="vehicle_price_key_word">$220.000</span>
+                        <span className="vehicle_price_key_word">{vehicle.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
                     </div>
                 </div>
             </div>

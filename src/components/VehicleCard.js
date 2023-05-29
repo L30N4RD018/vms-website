@@ -2,14 +2,14 @@ import '../stylesheets/Vehicle_Card.css';
 import React, {useState} from 'react';
 import CustomLink from './CustomLink';
 import {BsStar, BsStarFill} from 'react-icons/bs';
+import { FaWeightHanging, FaClock, FaCheckCircle } from 'react-icons/fa';
+import {MdLocalOffer} from "react-icons/md";
 
 function VehicleCard({vehicle}) {
   const [isFavorite, setIsFavorite] = useState(false);
-
   function handleFavoriteClick() {
     setIsFavorite(!isFavorite);
   }
-
   return (
     <>
       <div className='vehicle_card'>
@@ -47,34 +47,34 @@ function VehicleCard({vehicle}) {
           <div className='vehicle_card_info__box'>
             <div className='vehicle_card_info__box_item'>
               <div className='item__box_icon'>
-
+                <FaWeightHanging/>
               </div>
               <div className='item__box_text'>
-
+                {vehicle.weight}
               </div>
             </div>
             <div className='vehicle_card_info__box_item'>
               <div className='item__box_icon'>
-
+                <FaClock/>
               </div>
               <div className='item__box_text'>
-
+                {vehicle.age}
               </div>
             </div>
             <div className='vehicle_card_info__box_item'>
               <div className='item__box_icon'>
-
+                <MdLocalOffer/>
               </div>
               <div className='item__box_text'>
-
+                {vehicle.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
               </div>
             </div>
             <div className='vehicle_card_info__box_item'>
               <div className='item__box_icon'>
-
+                <FaCheckCircle/>
               </div>
               <div className='item__box_text'>
-
+                {vehicle.status}
               </div>
             </div>
           </div>

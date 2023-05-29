@@ -7,7 +7,7 @@ function RecordTableTuple({vehicle}) {
                 <span className="table_tuple_text">{vehicle.id_vehicle}</span>
                 <span className="table_tuple_text">{vehicle.brand}</span>
                 <span className="table_tuple_text">03/05/2004</span>
-                <span className="table_tuple_text">$ {vehicle.price}</span>
+                <span className="table_tuple_text">$ {vehicle.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
             </div>
         </section>
     )

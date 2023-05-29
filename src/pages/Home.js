@@ -17,6 +17,7 @@ function App({Vehicles, Loading}) {
               <VehicleCard
                 key={vehicle.id_vehicle}
                 vehicle={vehicle}
+                imagePath={`./img/vehicles/${vehicle.model.replace(/\s/g,'_')}.png`}
               />
             ))
           )}

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import '../App.css'
 import '../stylesheets/ShoppingCar.css'
-import button from "bootstrap/js/src/button";
 
 const App = () => {
   const [loading, setLoading] = useState(false)
@@ -54,9 +53,7 @@ const App = () => {
                     <span>{vehicle.model}</span>
                   </div>
                 </div>
-                <span>
-                  $ {vehicle.price}
-                </span>
+                <span>{vehicle.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
                 <div className='delete_button_container'>
                   <button className='delete_button' onClick={() => handleDeleteClick(shoppingCar[0].dni, vehicle.id_vehicle)}>
                     <span>Delete</span>

@@ -36,10 +36,6 @@
     background: rgba(225,225,225, .6);
     backdrop-filter: blur(1px);
 }
-.product:nth-child(3){
-    text-align: center;
-    background-color: black;
-}
 .product_description{
     display: grid;
     align-items: center;
