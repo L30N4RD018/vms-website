@@ -56,7 +56,6 @@
       "for": "post",
       "required": true
     }
-
   ],
   [
     {
@@ -156,7 +155,6 @@
       "required": false
     }
   ],
-
   [
   {
     "level": "First product date",
@@ -171,6 +169,64 @@
       "type": "text",
       "placeholder": "DD/MM/YYYY",
       "for": "second_date",
+      "required": true
+    }
+  ],
+  [
+    {
+      "level": "Model",
+      "type": "text",
+      "placeholder": "Toyota Supra Mk4",
+      "for": "model",
+      "required": true
+    },
+    {
+      "level": "Description",
+      "type": "text",
+      "placeholder": "This is a vehicle",
+      "for": "description",
+      "required": true
+    },
+    {
+      "level": "Brand",
+      "type": "text",
+      "placeholder": "Toyota",
+      "for": "brand",
+      "required": true
+    },
+    {
+      "level": "Type",
+      "type": "text",
+      "placeholder": "Maritime",
+      "for": "type",
+      "required": true
+    },
+    {
+      "level": "Weight",
+      "type": "numeric",
+      "placeholder": "89000",
+      "for": "weight",
+      "required": true
+    },
+    {
+      "level": "Age",
+      "type": "numeric",
+      "placeholder": "2",
+      "for": "age",
+      "required": true
+    },
+    {
+      "level": "Price",
+      "type": "numeric",
+      "placeholder": "140000",
+      "for": "price",
+      "required": true
+    },
+    {
+      "level": "Status",
+      "type": "text",
+      "placeholder": "Second Hand",
+      "for": "status",
       "required": true
     }
   ]

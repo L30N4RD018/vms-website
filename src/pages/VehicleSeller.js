@@ -62,11 +62,7 @@ const Options = () => {
         <Col xs={12} lg={6}>
 
         </Col>
-        <div className='button_container'>
-          <Button variant="" className='buttons'>
-            Submit
-          </Button>
-        </div>
+
       </Form>
     </Card.Body>
   );
@@ -75,7 +71,7 @@ const Details = () => {
   return (
     <Card.Body className="form__box">
       <hr className="my-4"/>
-      <CustomForm title='Vehicle Information' inputs={InputsJson[2]}/>
+      <CustomForm title='Basic Vehicle Information' inputs={InputsJson[8]}/>
       <hr className="my-4"/>
     </Card.Body>
   );
@@ -86,10 +82,14 @@ function VehicleSeller() {
     <section className='App'>
       <section className='main_screen'>
         <section className='information_form'>
-          <CustomForm title='Seller Information' inputs={InputsJson[0]}/>
           <MultiOptionsForm>
             <Details />
             <Options />
+            <div className='button_container'>
+              <Button variant="" className='buttons' type='submit'>
+                Submit
+              </Button>
+            </div>
           </MultiOptionsForm>
         </section>
         <section className='other_information_container'>

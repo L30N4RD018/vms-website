@@ -14,18 +14,19 @@ const App = () => {
         setLoading(false)
       })
       .catch(error => {
-        console.log('You have one error', error)
+        console.log('You have an error', error)
       })
   }
   useEffect(() => {
     handleShopping()
   }, [])
   const handleDeleteClick = (dni_p, id_v) => {
+    localStorage.setItem(`isFavorite_${id_v}`, JSON.stringify(false))
     const options = {
-      method: 'POST',
+      method: 'DELETE',
       headers: {"Content-type": "application/json"}
     }
-    fetch(`https://vms-back.herokuapp.com/api/delete_purchase?dni=${dni_p}&id_v=${id_v}&confirm=false`, options).then(res => res.json())
+    fetch(`https://vms-back.herokuapp.com/api/delete_purchase?dni=123456&id_v=${id_v}&confirm=false`, options).then(res => res.json())
     handleShopping()
   }
   return (

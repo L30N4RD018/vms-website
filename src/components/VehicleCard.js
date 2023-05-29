@@ -1,14 +1,37 @@
 import '../stylesheets/Vehicle_Card.css';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import CustomLink from './CustomLink';
 import {BsStar, BsStarFill} from 'react-icons/bs';
 import { FaWeightHanging, FaClock, FaCheckCircle } from 'react-icons/fa';
 import {MdLocalOffer} from "react-icons/md";
 
 function VehicleCard({vehicle}) {
-  const [isFavorite, setIsFavorite] = useState(false);
-  function handleFavoriteClick() {
-    setIsFavorite(!isFavorite);
+  const [isFavorite, setIsFavorite] = useState(()=>{
+    const storedIsFavorite = localStorage.getItem(`isFavorite_${vehicle.id_vehicle}`);
+    return storedIsFavorite ? JSON.parse(storedIsFavorite) : false;
+  });
+  useEffect(() => {
+    localStorage.setItem(`isFavorite_${vehicle.id_vehicle}`, JSON.stringify(isFavorite));
+  },[isFavorite])
+  const handleFavoriteClick = () => {
+    setIsFavorite(prevIsFavorite => {
+      const newIsFavorite = !prevIsFavorite;
+      localStorage.setItem(`isFavorite_${vehicle.id_vehicle}`, JSON.stringify(newIsFavorite))
+      return newIsFavorite
+    });
+    const requestOptions = {
+      method: isFavorite ? 'DELETE' : 'POST',
+      headers: {"Content-type": "application/json"}
+    };
+    const url = isFavorite
+      ? `https://vms-back.herokuapp.com/api/delete_purchase?dni=123456&id_v=${vehicle.id_vehicle}&confirm=false`
+      : `https://vms-back.herokuapp.com/api/purchase?dni=123456&id_vehicle=${vehicle.id_vehicle}&confirm=false`
+    console.log(isFavorite, url)
+    fetch(url, requestOptions)
+      .then(res => res.json())
+      .catch(error => {
+        console.log("Error", error)
+      })
   }
   return (
     <>
