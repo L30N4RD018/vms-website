@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import {Route, Routes} from "react-router-dom";
 import {useEffect, useState} from "react";
 import ShoppingRecord from "./pages/ShoppingRecord";
+import PurchaseMade from "./pages/PurchaseMade";
 
 function App() {
   const [Vehicles, setVehicles] = useState([])
@@ -52,6 +53,7 @@ function App() {
           <Route path="/shopping_car" element={<ShoppingCar/>}/>
           <Route path="/vehicle_seller" element={<VehicleSeller />}/>
           <Route path="/purchase_history" element={<ShoppingRecord />}/>
+          <Route path="/Purchase_Made" element={<PurchaseMade/>}/>
         </Routes>
       </div>
     </>

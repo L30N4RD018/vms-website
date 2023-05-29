@@ -22,7 +22,7 @@ function Buy({vehicle}) {
         </MultiOptionsForm>
       </div>
       <div className='button_container'>
-        <CustomLink to='/' classname='buttons'>
+        <CustomLink to='/Purchase_Made' classname='buttons'>
           <span>Pay Now</span>
         </CustomLink>
       </div>
